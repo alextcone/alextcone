@@ -16,6 +16,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700);
 body { color: black; font-family: Helvetica, sans-serif; }
 .wrapper { margin: 0 auto; max-width: 900px; padding: 10px; }
+a { color: #F93A21; }
 header { background: #23262A; color: #f4f4f4; }
 header h1 { display: inline; font-family: 'Oleo Script Swash Caps', cursive; font-size: 32px; }
 header a, header a:link { color: #f4f4f4; text-decoration: none; }
@@ -24,19 +25,26 @@ nav.horizontal ul { margin-top: 8px; }
 nav.horizontal li { display: inline; padding: 0 20px; }
 nav.horizontal li.first { padding-left: 0; }
 nav.horizontal li.last { padding-right: 0; }
-section.about article { margin: 10px 160px 0; }
+section.about article.boilerplate { margin: 10px 160px 0; }
 section.about img { background: white; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); border: 1px solid #ccc; float: left; margin: 0 20px 0 0; max-width: 130px; padding: 5px; }
-section.about p { font-size: 24px; line-height: 1.4; margin: 20px 0 0; white-space: normal; }
+section.about article.boilerplate p { font-size: 24px; line-height: 1.4; margin: 20px 0 0; white-space: normal; }
+section.about article.bio { margin: 40px 0; line-height: 1.4; }
+section.about article.bio hr { height: 0.5; margin-top: 20px; width: 80px; }
+.bold { font-weight: 900; }
+.heading { display: block; }
 .pull-right { float: right; }
 /* alextcone resize styles */
-@media (min-width: 581px) and (max-width: 700px) {
-section.about article { margin: 10px 60px; }
+@media (min-width: 739px) and (max-width: 821px) {
+section.about article.boilerplate{ margin: 10px 40px; }
 }
-@media (min-width: 481px) and (max-width: 580px) {
-section.about article { margin: 10px 40px; }
+@media (min-width: 622px) and (max-width: 738px) {
+section.about article.boilerplate { margin: 10px 60px; }
 }
-@media (max-width: 480px) {
+@media (min-width: 581px) and (max-width: 621px) {
+section.about article.boilerplate { margin: 10px 40px; }
+}
+@media (max-width: 580px) {
 nav.horizontal { display: none; }
-section.about article { margin: 10px 0 0; }
-section.about p { font-size: 19px; line-height: 1.4; }
+section.about article.boilerplate { margin: 10px 0 0; }
+section.about article.boilerplate p { font-size: 19px; line-height: 1.4; }
 }
