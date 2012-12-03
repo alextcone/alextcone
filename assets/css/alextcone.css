@@ -33,11 +33,17 @@ section.about article.boilerplate p { font-size: 24px; line-height: 1.4; margin:
 section.about article.bio { margin: 40px 0; line-height: 1.4; }
 section.about article.bio .circle { background: black; height: 80px; width: 80px; }
 section.about article.bio .circle #info { color: #f0f0f0; display: inline; font-family: Georgia, serif; font-size: 22px; font-style: italic; font-weight: 900; left: 36px; position: relative; top: 24px; }
+section.about article.resume .rectangle { background: black; display: inline-block; height: 166px; padding-top: 8px; width: 130px; }
+section.about article.resume .rectangle:hover { background: #f93a21; }
+section.about article.resume hr { background: white; border-bottom: none; border: none; height: 1px; margin: 4px auto; width: 110px; }
+section.about article.resume hr#top { margin-top: 13px; }
 .bold { font-weight: 900; }
-.circle { border-radius: 50%; display: inline-block; margin: 0 1px 0 40px; }
+.center { display: block; text-align: center; }
+.circle { border-radius: 50%; display: inline-block; margin: 0 1px 20px 40px; }
 .heading { display: block; }
 .pull-left { float: left; }
 .pull-right { float: right; }
+.white { color: white; }
 /* alextcone resize styles */
 @media (min-width: 739px) and (max-width: 821px) {
 section.about article.boilerplate{ margin: 10px 40px; }
