@@ -16,7 +16,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700);
 body { color: black; font-family: Helvetica, sans-serif; }
 .wrapper { margin: 0 auto; max-width: 900px; padding: 10px; }
-a { color: #F93A21; }
+a { color: #f93a21; }
+a:hover { color: black; }
 header { background: #23262A; color: #f4f4f4; }
 header h1 { display: inline; font-family: 'Oleo Script Swash Caps', cursive; font-size: 32px; }
 header a, header a:link { color: #f4f4f4; text-decoration: none; }
@@ -28,7 +29,7 @@ nav.horizontal li { display: inline; padding: 0 20px; }
 nav.horizontal li.first { padding-left: 0; }
 nav.horizontal li.last { padding-right: 0; }
 section.about article.boilerplate { margin: 10px 160px 0; }
-section.about img { background: white; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); border: 1px solid #ccc; float: left; margin: 0 20px 0 0; max-width: 130px; padding: 5px; }
+section.about article.boilerplate img { background: white; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); border: 1px solid #ccc; float: left; margin: 0 20px 0 0; max-width: 130px; padding: 5px; }
 section.about article.boilerplate p { font-size: 24px; line-height: 1.4; margin: 20px 0 0; white-space: normal; }
 section.about article.bio { margin: 40px 0; line-height: 1.4; }
 section.about article.bio .circle { background: black; height: 80px; width: 80px; }
@@ -37,12 +38,15 @@ section.about article.resume .rectangle { background: black; display: inline-blo
 section.about article.resume .rectangle:hover { background: #f93a21; }
 section.about article.resume hr { background: white; border-bottom: none; border: none; height: 1px; margin: 4px auto; width: 110px; }
 section.about article.resume hr#top { margin-top: 13px; }
+section.about article.resume img#github { max-width: 120px; position: relative; top: 50px; }
+section.about article.resume img#rss { max-width: 100px; position: relative; top: 28px; }
 .bold { font-weight: 900; }
-.center { display: block; text-align: center; }
-.circle { border-radius: 50%; display: inline-block; margin: 0 1px 20px 40px; }
+.center { display: block; margin: 0 auto; text-align: center; }
+.circle { border-radius: 50%; display: inline-block; margin: 0 1px 0 40px; }
 .heading { display: block; }
 .pull-left { float: left; }
 .pull-right { float: right; }
+.threes { width: 33.333%; }
 .white { color: white; }
 /* alextcone resize styles */
 @media (min-width: 739px) and (max-width: 821px) {
@@ -58,4 +62,5 @@ section.about article.boilerplate { margin: 10px 40px; }
 nav.horizontal { display: none; }
 section.about article.boilerplate { margin: 10px 0 0; }
 section.about article.boilerplate p { font-size: 19px; line-height: 1.4; margin-top: 8px; }
+.circle { margin-bottom: 24px; }
 }
