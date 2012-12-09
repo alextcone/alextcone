@@ -42,11 +42,11 @@ section.about article.resume img#github { max-width: 120px; position: relative; 
 section.about article.resume img#github:hover, section.about article.resume img#rss:hover { opacity: 0.75; }
 section.about article.resume img#rss { max-width: 100px; position: relative; top: 28px; }
 section.work h2 { font-family: 'Oleo Script Swash Caps', cursive; font-size: 32px; margin-bottom: 34px; }
-section.work p { margin-bottom: 20px; padding-right: 20px; }
 section.work pre { color: #e6e1dc; font-family: “Monaco”, monospace; font-size: 12px; overflow: auto; overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap !important; word-wrap: break-word; }
 section.work .code { background: #2b2b2b; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; margin-left: 20px; }
 section.work .inner { padding: 12px; }
 section.work article.mast { margin-bottom: 20px; }
+section.work article.mast p { margin-bottom: 20px; padding-right: 20px; }
 section.work article.portfolio img { margin-bottom: 2px; max-width: 100%; }
 footer { background: #ccc; margin-top: 40px; padding: 20px 0; }
 .bold { font-weight: 900; }
@@ -85,6 +85,7 @@ section.about article.boilerplate { margin: 10px 0 0; }
 section.about article.boilerplate p { font-size: 19px; margin-top: 8px; }
 section.about article.resume .pull-left, section.about article.work .pull-left { float: none; }
 section.about article.resume img#github, section.about article.resume img#rss { margin-top: 40px; position: relative; top: 0; }
+section.work article.mast p { padding-right: 0; }
 section.work .code { margin-left: 0; }
 .circle { margin-bottom: 24px; }
 .desktop { margin-right: 0; width: 100%; }
