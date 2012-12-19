@@ -54,6 +54,7 @@ section.connect .social-no-border { border-bottom: none; display: block; padding
 section.connect .social a.text, section.connect .social-no-border a.text { position: relative; top: -11px; }
 section.connect .social img, section.connect .social-no-border img { border: none; margin-right: 10px; }
 footer { background: #ccc; margin-top: 40px; padding: 20px 0; }
+footer p { font-size: 13px; margin-bottom: 7px; }
 .add-bottom { margin-bottom: 25px; }
 .bold { font-weight: 900; }
 .center { display: block; margin: 0 auto; text-align: center; }
