@@ -175,3 +175,53 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* main */
+
+body {
+	width: 100%;
+}
+
+header {
+	background: #2d2d2d;
+}
+
+#me {
+	color: #fff;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	margin: 0 0 0 8px;
+}
+
+section.about {
+	margin: 0;
+	height: 250px;
+	position: relative;
+	width: 100%;
+}
+
+#avatar {
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 250px;
+}
+
+.about img {
+	width: 250px;
+}
+
+#summary {
+	height: 250px;
+	margin-left: 250px;
+	text-align: center;
+}
+
+#summary h2 {
+	margin: 0 auto;
+}
+
+/* utils */
+
+.pull-left {
+	float: left;
+}
