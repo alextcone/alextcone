@@ -187,41 +187,75 @@ header {
 	background: #2d2d2d;
 }
 
+article {
+  line-height: 1.4;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 #me {
 	color: #fff;
 	font-family: 'Oleo Script Swash Caps', cursive;
-	margin: 0 0 0 8px;
+	margin: 0 0 0 6px;
 }
 
-section.about {
+.about,
+.more-about,
+.work {
 	margin: 0;
 	height: 250px;
 	position: relative;
 	width: 100%;
 }
 
-#avatar {
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 250px;
-}
-
 .about img {
 	width: 250px;
 }
 
-#summary {
-	margin-left: 250px;
-	text-align: center;
-}
-
 #summary h2 {
   font-size: 3em;
-	margin: 98px 20px 0;
+  line-height: 1;
+  margin: 98px 20px 0 0;
+}
+
+#summary,
+#bio,
+#examples {
+  left: 294px;
+  position: absolute;
+}
+
+#bio,
+#examples {
+  max-width: 600px;
+  padding: 20px 20px 0 0;
 }
 
 /* utils */
+
+.block {
+  color: white;
+  display: block;
+  height: 210px;
+  padding: 20px;
+  width: 210px;
+}
+
+.blue {
+  background: #3498db;
+}
+
+.green {
+  background: #27ae60;
+}
 
 .pull-left {
 	float: left;
@@ -229,7 +263,7 @@ section.about {
 
 /* breakpoints */
 
-@media (min-width: 681px) and (max-width: 1590px) {
+@media (min-width: 681px) and (max-width: 1358px) {
   #summary h2 {
     margin-top: 72px;
   }
@@ -272,7 +306,8 @@ section.about {
     background: url("/assets/img/face.png") no-repeat;
   }
 
-  #summary, #summary h2 {
+  #summary,
+  #summary h2 {
     margin: 0 auto;
   }
 }
