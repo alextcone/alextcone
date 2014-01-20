@@ -49,12 +49,19 @@
 			<li>omnigraffle</li>
 		</ul>
 		<form>
-			<input type="text" value="alextcone">
+			<input id="search" type="text" value="alextcone">
+			<button>Search</button>
 		</form>
 	</section>
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/scrollTo.localscroll.js"></script>
+<script type="text/javascript">
+$('button').on('click', function() {
+	var search = $('#search').val();
+	var terms = search.split(' ').join('+');
+	window.open('https://www.google.com/#q=' + terms);
+});
+</script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-37159798-1']);

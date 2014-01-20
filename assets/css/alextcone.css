@@ -54,13 +54,32 @@ h2 {
 	padding-right: 0;
 }
 input[type='text'] {
-	border: 4px solid #F0F0F0;
+	border: 4px solid #8E959C;
 	color: #3C3F42;
+	display: inline-block;
 	font-family: Helvetica, arial, sans-serif;
 	font-size: 2em;
-	margin-top: 20px;
+	margin: 20px 0 0 0;
+	padding-bottom: 2px;
 	padding-left: 6px;
-	width: 98%;
+	width: 50%;
+}
+input[type='text']:focus {
+	box-shadow: none;
+	outline: none;
+}
+button {
+	background: #8E959C;
+	border: 3px solid #8E959C;
+	color: #FFF;
+	display: inline-block;
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 2em;
+	margin: 0 0 0 -8px;
+}
+button:focus {
+	box-shadow: none;
+	outline: none;
 }
 /* accents */
 .line {
