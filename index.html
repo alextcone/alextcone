@@ -48,6 +48,7 @@
 			<li>indesign</li>
 			<li>omnigraffle</li>
 		</ul>
+		<h2>on the internet:</h2>
 		<form>
 			<input id="search" type="text" value="alextcone">
 			<button>Search</button>
@@ -56,10 +57,19 @@
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
+// Search on click
 $('button').on('click', function() {
 	var search = $('#search').val();
 	var terms = search.split(' ').join('+');
 	window.open('https://www.google.com/#q=' + terms);
+});
+// Search on return keyup
+$('#search').keyup(function(e) {
+	if (e.keycode == 13) {
+		var search = $('#search').val();
+		var terms = search.split(' ').join('+');
+		e.window.open('https://www.google.com/#q=' + terms);
+	}
 });
 </script>
 <script type="text/javascript">
