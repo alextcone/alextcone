@@ -20,11 +20,10 @@
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]><script src="assests/js/html5shiv.js"></script><![endif]-->
 </head>
-<body>
+<body class="snow">
 	<!-- Lines -->
 	<div class="line purple"></div>
 	<div class="line sand"></div>
-	<div class="line snow"></div>
 	<!-- End Lines -->
 	<header class="cf container">
 		<h1>alextcone</h1>
@@ -48,11 +47,23 @@
 			<li>indesign</li>
 			<li>omnigraffle</li>
 		</ul>
-		<h2>on the internet:</h2>
-		<form>
-			<input id="search" type="text" value="alextcone">
-			<button>Search</button>
-		</form>
+	</section>
+	<section class="cf container">
+		<img id="avatar" src="assets/img/alextcone-cirlce.gif">
+		<article class="container-small">
+			<h3 class="center">more about alex:</h3>
+			<p class="center">I live in Brooklyn and write code. A first, I know. I'm also an ex-Arkansan that once studied European Union policy making in a 15th century palazzo in Florence. Oh, and at one time I thought I'd be an accountant. I fully embrace the No Reservations Generation*, developer persona that over-subscribes to design blogs, talks about elegant code and loves coffee.</p>
+			<p class="center">I do digital product work for companies of all shapes and sizes. Currently, I'm a User Experience Specialist at AppNexus. If you think we'd get along swimmingly on your next project, let me know @<a href="http://twitter.com/alextcone" target="_blank">alextcone</a>.</p>
+		</article>
+	</section>
+	<section class="cf container">
+		<div class="container-small">
+			<h2>on the internet:</h2>
+			<form>
+				<input id="search" type="text" value="alextcone">
+				<button>Search</button>
+			</form>
+		</div>
 	</section>
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -61,6 +72,7 @@
 $('button').on('click', function() {
 	var search = $('#search').val();
 	var terms = search.split(' ').join('+');
+	
 	window.open('https://www.google.com/#q=' + terms);
 });
 // Search on return keyup
@@ -68,6 +80,7 @@ $('#search').keyup(function(e) {
 	if (e.keycode == 13) {
 		var search = $('#search').val();
 		var terms = search.split(' ').join('+');
+		
 		e.window.open('https://www.google.com/#q=' + terms);
 	}
 });
