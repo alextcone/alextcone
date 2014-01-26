@@ -45,7 +45,7 @@ p {
 	line-height: 1.4;
 	margin-bottom: 20px;
 }
-a{
+a {
 	color: #40083C;
 	font-weight: 900;
 }
@@ -133,4 +133,35 @@ section:nth-of-type(3) {
 }
 .snow {
 	background: #F4F4FA;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+	h1 {
+		font-size: 2.2em;
+	}
+	h2 {
+		font-size: 1.6em;
+		margin-top: 20px;
+	}
+	p {
+		font-size: 1em;
+	}
+	.skillset {
+		left: -0.4em;
+	}
+	.skillset li {
+		font-size: 1.2em;
+	}
+	.container-small {
+		width: 80%;
+	}
+	input[type='text'] {
+		font-size: 1.2em;
+		width: 59%;
+	}
+	button {
+		font-size: 1.2em;
+	}
+	section:nth-of-type(3) {
+		margin-bottom: 60px;
+	}
 }
