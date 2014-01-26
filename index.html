@@ -59,17 +59,19 @@
 	<section class="cf container">
 		<div class="container-small">
 			<h2>on the internet:</h2>
-			<form>
-				<input id="search" type="text" value="alextcone">
-				<button>Search</button>
-			</form>
+			<div>
+				<form>
+					<input id="search" type="text" value="alextcone">
+					<input type="submit" value="search">
+				</form>
+			</div>
 		</div>
 	</section>
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
 // Search on click
-$('button').on('click', function() {
+$('input[type="submit"]').on('click', function() {
 	var search = $('#search').val();
 	var terms = search.split(' ').join('+');
 	
