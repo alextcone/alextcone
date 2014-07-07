@@ -103,7 +103,7 @@ input[type='text']:focus {
 input[type=submit] {
 	background: #3C3F42;
 	border: 1px solid #3C3F42;
-	border-radius;
+	border-radius: 0;
 	box-sizing: border-box;
 	color: #DEDEDE;
 	cursor: pointer;
