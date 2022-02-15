@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,16 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="author" content="Alex Cone">
-<meta name="description" content="Alex Cone (alextcone) is Product Manager at AppNexus living in Brooklyn, New York.">
-<meta name="keywords" content="Product Management, leadership, go-to-market, advertising, sql">
+<meta name="description" content="Alex Cone (alextcone) is VP Privacy and Data Protection at IAB Tech Lab.">
+<meta name="keywords" content="privacy, product Management, leadership, go-to-market, advertising, sql">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="alextcone">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://alextcone/assets/img/alextcone-circle.gif">
 <meta property="og:url" content="http://alextcone.com">
-<meta property="og:site_name" content="alextcone">
-<meta property="fb:admins" content="alextcone">
-<meta property="og:description" content="I build web software.">
 <link rel="stylesheet" href="assets/css/alextcone.css">
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" >
@@ -36,24 +34,19 @@
 			<li>product management</li>
 			<li>go-to-market</li>
 			<li>advertising</li>
-			<li>huge data</li>
+			<li>privacy</li>
 			<li>politics</li>
-			<li>agile</li>
-			<li>context sharing</li>
+			<li>teaching</li>
 			<li>reading</li>
-			<li>writing</li>
-			<li>sql</li>
-			<li>git</li>
-			<li>photoshop</li>
-			<li>smarter people</li>
+      <li>writing</li>
 			<li>team building</li>
+      <li>strategy</li>
 		</ul>
 	</section>
 	<section class="cf container">
 		<img id="avatar" src="assets/img/alextcone-circle.gif">
 		<article class="container-small"><br />
-			<p class="center">I live in Brooklyn and work in advertising technology. A first, I know. I'm also an ex-Arkansan that once studied European Union policy making in a 15th century palazzo in Florence. Oh, and at one time I thought I'd be an accountant. Strange.</p>
-			<p class="center">I work with smart, passionate people to pour into hard problems. I'm happiest at work when I help people thrive.</p>
+			<p class="center">I work with smart, passionate people to pour into hard problems. I'm happiest at work when I help people thrive. Current focus: working through the mess of incentives that is the intersection of data protection, privacy, digital advertising and media to create a more private ad funded internet.</p>
 		</article>
 	</section>
 	<section class="cf container">
@@ -68,22 +61,22 @@
 		</div>
 	</section>
 </body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript">
 // Search on click
 $('input[type="submit"]').on('click', function() {
 	var search = $('#search').val();
 	var terms = search.split(' ').join('+');
-	
-	window.open('https://www.google.com/#q=' + terms);
+
+	window.open('https://www.google.com/search?q=' + terms);
 });
 // Search on return keyup
 $('#search').keyup(function(e) {
 	if (e.keycode == 13) {
 		var search = $('#search').val();
 		var terms = search.split(' ').join('+');
-		
-		e.window.open('https://www.google.com/#q=' + terms);
+
+		e.window.open('https://www.google.com/search?q=' + terms);
 	}
 });
 </script>
